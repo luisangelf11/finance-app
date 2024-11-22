@@ -4,10 +4,10 @@ export default function Navbar() {
   return (
     <nav className="p-4 w-full flex justify-around items-center">
       <div>
-        <h2 className="uppercase font-semibold text-2xl">Finance App</h2>
+        <h2 className="uppercase font-semibold text-xl sm:text-2xl">Finance App</h2>
       </div>
       <div className="flex gap-4">
-        <Link href="/" className="flex justify-center items-center gap-2 hover:text-yellow-200 transition-all text-sm">
+        <Link href="/" className="flex justify-center items-center gap-1 sm:gap-2 hover:text-yellow-200 transition-all text-xs sm:text-sm">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -21,7 +21,7 @@ export default function Navbar() {
         </Link>
         <Link
           href="/dashboard"
-          className="flex justify-center items-center gap-2 hover:text-yellow-200 transition-all text-sm"
+          className="flex justify-center items-center gap-1 sm:gap-2 hover:text-yellow-200 transition-all text-xs sm:text-sm"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
