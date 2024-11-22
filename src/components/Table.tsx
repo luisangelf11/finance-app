@@ -14,7 +14,7 @@ export default function Table({ data, title }: Props) {
   };
   return (
     <section className="flex flex-col justify-center items-center">
-    <table className="w-[400px] p-4">
+    <table className="w-[90%] sm:w-[400px] p-4">
       <thead className="border-b">
         <tr className="uppercase text-sm font-semibold text-center">
           <th className="p-2">Title</th>

@@ -29,7 +29,7 @@ export default function TablesPanel() {
     }, [])
 
   return (
-    <section className='flex gap-10 mt-4 w-full p-2 justify-center items-center'>
+    <section className='flex flex-col sm:flex-row gap-10 mt-4 w-full p-2 justify-center items-center'>
         <Table title="Expenses" data={expenses} />
         <Table title="Income" data={income} />
     </section>

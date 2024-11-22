@@ -33,7 +33,7 @@ export default function DashboardPanel() {
     return incomes - expenses;
   }, [expenses, incomes]);
   return (
-    <article className="flex w-full justify-center items-center gap-4 mt-4">
+    <article className="flex flex-col sm:flex-row w-full justify-center items-center gap-4 mt-4">
       <Card title="Expenses" value={expenses}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
