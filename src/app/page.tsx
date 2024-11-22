@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div className="w-full h-[500px] flex justify-center items-center flex-col">
-      <section className="flex w-full justify-center items-center gap-4 mt-2">
+      <section className="flex flex-col sm:flex-row w-full justify-center items-center gap-4 mt-2">
         <Image
           src={FinanceIMG}
           alt="finance"
@@ -25,7 +25,7 @@ export default function Home() {
           priority
         />
         <article className="flex flex-col justify-center items-center gap-2">
-          <h2 className="text-xl uppercase font-semibold">
+          <h2 className="text-md sm:text-xl uppercase font-semibold text-center">
             Keep track of your expenses and income!
           </h2>
           <p className="text-sm w-[250px] p-2 text-center">

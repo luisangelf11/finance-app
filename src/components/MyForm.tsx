@@ -74,7 +74,7 @@ export default function MyForm({ title, typeForm }: Props) {
   return (
     <form
       onSubmit={handleSubmit}
-      className=" bg-white text-stone-900 w-[400px] p-4 flex flex-col gap-2 justify-center items-center rounded-md"
+      className=" bg-white text-stone-900 w-[100%] sm:w-[400px] p-4 flex flex-col gap-2 justify-center items-center rounded-md"
     >
       <h2 className="text-xl uppercase font-semibold">{title}</h2>
       <label
