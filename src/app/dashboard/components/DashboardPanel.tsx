@@ -6,26 +6,30 @@ import React, { useMemo } from "react";
 export default function DashboardPanel() {
   //Total expenses
   const expenses = useMemo(() => {
-    const res = localStorage.getItem("expenses");
-    let data: IDataArray[] = [];
-    if (res) data = JSON.parse(res);
-    let total = 0;
-    data.forEach((el) => {
-      total += el.amonut;
-    });
-    return total;
+    if (typeof window !== "undefined"){
+      const res = localStorage.getItem("expenses");
+      let data: IDataArray[] = [];
+      if (res) data = JSON.parse(res);
+      let total = 0;
+      data.forEach((el) => {
+        total += el.amonut;
+      });
+      return total;
+    } else return 0
   }, []);
 
   //Total income
   const incomes = useMemo(() => {
-    const res = localStorage.getItem("income");
-    let data: IDataArray[] = [];
-    if (res) data = JSON.parse(res);
-    let total = 0;
-    data.forEach((el) => {
-      total += el.amonut;
-    });
-    return total;
+    if(typeof window !== "undefined"){
+      const res = localStorage.getItem("income");
+      let data: IDataArray[] = [];
+      if (res) data = JSON.parse(res);
+      let total = 0;
+      data.forEach((el) => {
+        total += el.amonut;
+      });
+      return total;
+    }else return 0
   }, []);
 
   //Net money
